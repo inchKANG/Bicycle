@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <ImageView
+        android:id="@+id/Comment_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Comment_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="유저의 아이디"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Comment_image"
+        app:layout_constraintTop_toTopOf="@+id/Comment_image" />
+
+    <TextView
+        android:id="@+id/Comment_Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="댓글내용"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Comment_ID"
+        app:layout_constraintTop_toBottomOf="@+id/Comment_ID" />
+
+    <TextView
+        android:id="@+id/Comment_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="8dp"
+        android:text="날짜"
+        app:layout_constraintStart_toStartOf="@+id/Comment_Text"
+        app:layout_constraintTop_toBottomOf="@+id/Comment_Text" />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#dcdcdc"/>
+
+    <ImageView
+        android:id="@+id/comment_edt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comment_x"
+        app:layout_constraintEnd_toStartOf="@+id/comment_x"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/comment_x"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconfinder_close2_1814078" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

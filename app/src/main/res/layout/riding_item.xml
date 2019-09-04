@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nullbutton"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    >
+    <ImageView
+        android:id="@+id/RSavedImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:adjustViewBounds="true"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주행날짜 : "
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/RSavedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주행시간 : "
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/RSavedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주행거리 : "
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/RSavedDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거리"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

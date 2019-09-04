@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nullbutton"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    >
+
+    <ImageView
+        android:id="@+id/shop_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/shop"
+        />
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="2dp"
+            android:id="@+id/shop_title"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="15dp"
+            android:paddingLeft="10sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/shop_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:paddingLeft="10sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/shop_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="글쓴이"
+            android:paddingRight="10sp"
+            />
+        <TextView
+            android:id="@+id/shop_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="날짜"
+            android:paddingRight="10sp"
+            android:paddingBottom="2dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

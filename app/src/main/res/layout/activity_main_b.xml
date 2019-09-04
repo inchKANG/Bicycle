@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainBActivity1">
+
+
+    <TextView
+        android:id="@+id/mainBtt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="About Bicycle"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/bic"
+        app:layout_constraintBottom_toBottomOf="@+id/mainBtt"
+        app:layout_constraintStart_toEndOf="@+id/mainBtt"
+        app:layout_constraintTop_toTopOf="@+id/mainBtt" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/mainBtt"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/darkline"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuguide1"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/bicycleButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#80000000"
+            android:src="@drawable/bic" />
+
+        <ImageView
+            android:id="@+id/userButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/my" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/menuguide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <Button
+        android:id="@+id/shopbutton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:text="중고거래"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/Memo_button"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:background="#80fff0f0"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="@id/shopbutton"
+        app:layout_constraintTop_toTopOf="@id/shopbutton"
+        app:layout_constraintBottom_toBottomOf="@id/shopbutton"
+        android:src="@drawable/shop"
+        android:visibility="gone"
+
+        />
+
+
+    <Button
+        android:id="@+id/Memo_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="일정메모"
+        android:textSize="25sp"
+        android:layout_margin="4dp"
+        android:background="#80fff0f0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/Exercise_Button"
+        app:layout_constraintTop_toBottomOf="@+id/shopbutton"
+
+         />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="@id/Memo_button"
+        app:layout_constraintTop_toTopOf="@id/Memo_button"
+        app:layout_constraintBottom_toBottomOf="@id/Memo_button"
+        android:src="@drawable/memo"
+
+        />
+
+    <Button
+        android:id="@+id/Exercise_Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="운동시작"
+        android:textSize="25sp"
+        android:layout_margin="4dp"
+        android:background="#80fff0f0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/BicycleShop_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Memo_button" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="@id/Exercise_Button"
+        app:layout_constraintTop_toTopOf="@id/Exercise_Button"
+        app:layout_constraintBottom_toBottomOf="@id/Exercise_Button"
+        android:src="@drawable/ic_directions_bike_black_24dp"
+
+        />
+
+    <Button
+        android:id="@+id/BicycleShop_Button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="가까운 자전거매장"
+        android:textSize="25sp"
+        android:layout_margin="4dp"
+        android:background="#80fff0f0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Exercise_Button" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="@id/BicycleShop_Button"
+        app:layout_constraintTop_toTopOf="@id/BicycleShop_Button"
+        app:layout_constraintBottom_toBottomOf="@id/BicycleShop_Button"
+        android:src="@drawable/shop"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

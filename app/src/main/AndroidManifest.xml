@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bicycle">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".UserSetting"></activity>
+        <activity android:name=".findid" />
+        <activity android:name=".MapEXAM" />
+        <activity android:name=".CommentEditActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".HomeAll" />
+        <activity android:name=".MainB_Riding" />
+        <activity android:name=".MainHome_add" />
+        <activity android:name=".Memo_new" />
+        <activity android:name=".MainB_Memo"
+            android:windowSoftInputMode="adjustNothing"
+            />
+        <activity android:name=".Shop_new" />
+        <activity android:name=".MainB_Shop" />
+        <activity
+            android:name=".MainBActivity1"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainSearchActivity1"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".MainHomeActivity1"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".UserEdtActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name=".zzz" />
+        <activity android:name=".LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".UserActivity1"
+            android:launchMode="singleTask" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.bicycle"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+       <!-- 구글맵 api 키 입력-->
+    </application>
+
+</manifest>

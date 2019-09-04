@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MapEXAMLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapEXAM">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:text="가까운 자전거 매장 검색"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/skybutton"
+        android:id="@+id/placeButton"/>
+
+</LinearLayout>

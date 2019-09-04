@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="S_list">
+        <item>ID/내용</item>
+        <item>내용</item>
+        <item>ID</item>
+    </string-array>
+
+
+
+</resources>

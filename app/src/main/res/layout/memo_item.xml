@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nullbutton"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/memo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/memo_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="내용"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/memo_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="작성일"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000000" />
+</LinearLayout>
